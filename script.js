@@ -1,3 +1,4 @@
+```javascript
 const menuButton = document.querySelector("#menuButton");
 const navLinks = document.querySelector("#navLinks");
 
@@ -26,3 +27,5 @@ if (weekButton && weekText) {
         weekText.textContent = `Current League Week: ${currentWeek}`;
     });
 }
+```
+
