@@ -1,71 +1,125 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Robert Joseph Carter's web development portfolio featuring Madden league management projects.">
-    <title>Robert Carter | Web Development Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carter Prince - Web development portfolio">
+  <title>Carter Prince | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar" aria-label="Main navigation">
-            <a class="logo" href="index.html">Robert Carter</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-            <button
-                id="menuButton"
-                class="menu-button"
-                aria-expanded="false"
-                aria-controls="navLinks">
-                Menu
-            </button>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html">Carter Prince</a>
 
-            <ul id="navLinks" class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-menu">
+        Menu
+      </button>
 
-    <main>
-        <section class="hero">
-            <div>
-                <p class="eyebrow">Web Development Portfolio</p>
+      <ul class="nav-links" id="primary-menu">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About & Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-                <h1>Hi, I'm Robert Joseph Carter.</h1>
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Web Development Portfolio</p>
+        <h1>Building useful, accessible websites for the web.</h1>
+        <p class="hero-text">
+          I'm Carter Prince, a web development student focused on creating
+          responsive, user-friendly websites with HTML, CSS, and JavaScript.
+        </p>
 
-                <p class="intro">
-                    I'm a 28-year-old web developer from Fort Worth, Texas.
-                    I create websites and tools that help Madden players
-                    organize their online leagues, schedule games, and track
-                    weekly statistics.
-                </p>
+        <div class="button-group">
+          <a class="button primary-button" href="projects.html">
+            View My Projects
+          </a>
+          <a class="button secondary-button" href="about.html">
+            Contact Me
+          </a>
+        </div>
+      </div>
+    </section>
 
-                <a
-                    class="button"
-                    href="https://carterprince495-prog.github.io/the-league/index.html"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    View My Madden League Website
-                </a>
-            </div>
-        </section>
+    <section class="section" aria-labelledby="skills-heading">
+      <div class="section-heading">
+        <p class="eyebrow">What I Do</p>
+        <h2 id="skills-heading">Skills & Focus</h2>
+      </div>
 
-        <section class="section">
-            <h2>About Me</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>HTML</h3>
+          <p>
+            I create semantic page structures that are organized,
+            readable, and accessible.
+          </p>
+        </article>
 
+        <article class="card">
+          <h3>CSS</h3>
+          <p>
+            I build responsive layouts using modern CSS techniques,
+            including Flexbox, Grid, and media queries.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>JavaScript</h3>
+          <p>
+            I use JavaScript to add useful interactions, DOM manipulation,
+            and client-side form validation.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section featured-section" aria-labelledby="featured-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Work</p>
+        <h2 id="featured-heading">A few things I've built</h2>
+      </div>
+
+      <div class="card-grid">
+        <article class="project-card">
+          <div class="project-content">
+            <h3>Responsive Portfolio</h3>
             <p>
-                My web development experience comes from working with Madden
-                communities on Discord. I noticed that league members needed
-                easier ways to keep up with game schedules and weekly results,
-                so I began creating websites that organize this information
-                in one place.
+              A multi-page portfolio demonstrating responsive design,
+              accessibility, and JavaScript interactions.
             </p>
+            <a class="text-link" href="projects.html">Learn more →</a>
+          </div>
+        </article>
 
+        <article class="project-card">
+          <div class="project-content">
+            <h3>Interactive Web Page</h3>
             <p>
-                My goal is to build simple, useful websites that solve real
-                problems for online gaming communities. I enjoy working with
-                HTML, CSS, and JavaScript to turn an idea into some
-```
+              A JavaScript-powered page featuring interactive controls
+              and dynamic content.
+            </p>
+            <a class="text-link" href="projects.html">Learn more →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Carter Prince. All rights reserved.</p>
+  </footer>
+</body>
+</html>
