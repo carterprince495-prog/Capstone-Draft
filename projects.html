@@ -1,131 +1,135 @@
 
-```html
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-        name="description"
-        content="Robert Carter's Madden league management project."
-    >
-    <title>Projects | Robert Carter</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carter Prince web development projects">
+  <title>Carter Prince | Projects</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar" aria-label="Main navigation">
-            <a class="logo" href="index.html">Robert Carter</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-            <button
-                id="menuButton"
-                class="menu-button"
-                aria-expanded="false"
-                aria-controls="navLinks">
-                Menu
-            </button>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html">Carter Prince</a>
 
-            <ul id="navLinks" class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-menu">
+        Menu
+      </button>
 
-    <main>
-        <section class="page-heading">
-            <p class="eyebrow">Featured Project</p>
+      <ul class="nav-links" id="primary-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="projects.html">Projects</a></li>
+        <li><a href="about.html">About & Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <h1>Madden League Management Website</h1>
+  <main id="main-content">
+    <section class="page-header">
+      <p class="eyebrow">My Work</p>
+      <h1>Projects</h1>
+      <p>
+        A collection of projects demonstrating my web development skills,
+        design process, and problem-solving abilities.
+      </p>
+    </section>
 
+    <section class="section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="visually-hidden">
+        Project collection
+      </h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card large-card">
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <h3>Personal Portfolio</h3>
             <p>
-                A web-based tool designed to help Madden players manage
-                weekly league schedules and track statistics.
+              A responsive portfolio website created with HTML, CSS,
+              and JavaScript. The project focuses on accessibility,
+              responsive design, and clear navigation.
             </p>
 
-            <a
-                class="button"
-                href="https://carterprince495-prog.github.io/the-league/index.html"
-                target="_blank"
-                rel="noopener noreferrer">
-                Open Live Project
-            </a>
-        </section>
-
-        <section class="section project-details">
-            <div>
-                <h2>The Problem</h2>
-
-                <p>
-                    Madden leagues that are organized through Discord can
-                    become difficult to manage as the number of players and
-                    weekly games increases. Important information can be
-                    spread across Discord messages, making it harder for
-                    players to know when games are scheduled or how their
-                    statistics compare with other players.
-                </p>
-            </div>
-
-            <div>
-                <h2>The Solution</h2>
-
-                <p>
-                    My project creates a central website where league members
-                    can find their weekly schedule and view important league
-                    statistics. Instead of searching through Discord messages,
-                    players can use the website to find the information they
-                    need.
-                </p>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Project Features</h2>
-
-            <ul class="feature-list">
-                <li>Weekly Madden game scheduling</li>
-                <li>League statistics tracking</li>
-                <li>Player-focused information</li>
-                <li>Responsive design for phones and computers</li>
-                <li>Simple navigation for Discord communities</li>
+            <ul class="tech-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
             </ul>
-        </section>
+          </div>
+        </article>
 
-        <section class="section demo-section">
-            <h2>JavaScript Demo</h2>
-
+        <article class="project-card large-card">
+          <div class="project-number">02</div>
+          <div class="project-content">
+            <h3>Interactive JavaScript Page</h3>
             <p>
-                Click the button to simulate updating the current league week.
+              An interactive page using JavaScript DOM manipulation
+              to dynamically change content based on user interaction.
             </p>
 
-            <div class="week-display">
-                <p id="weekText">Current League Week: 1</p>
+            <ul class="tech-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </article>
 
-                <button id="weekButton" class="button">
-                    Advance League Week
-                </button>
-            </div>
-        </section>
+        <article class="project-card large-card">
+          <div class="project-number">03</div>
+          <div class="project-content">
+            <h3>Responsive Layout Project</h3>
+            <p>
+              A mobile-first website designed to adapt from small
+              smartphone screens to large desktop displays.
+            </p>
 
-        <section class="section">
-            <h2>Skills Used</h2>
+            <ul class="tech-list">
+              <li>Responsive Design</li>
+              <li>CSS Grid</li>
+              <li>Flexbox</li>
+            </ul>
+          </div>
+        </article>
 
-            <div class="skills">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Responsive Design</span>
-                <span>GitHub Pages</span>
-            </div>
-        </section>
-    </main>
+      </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Robert Joseph Carter. Portfolio Project.</p>
-    </footer>
+    <section class="section interaction-section" aria-labelledby="interaction-heading">
+      <div class="section-heading">
+        <p class="eyebrow">JavaScript Interaction</p>
+        <h2 id="interaction-heading">Show More</h2>
+      </div>
 
-    <script src="script.js"></script>
+      <p id="extra-projects" class="hidden-content">
+        I'm continuing to develop projects that explore APIs,
+        accessibility, responsive interfaces, and more advanced
+        JavaScript functionality.
+      </p>
+
+      <button
+        class="button primary-button"
+        id="show-more-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="extra-projects">
+        Show More
+      </button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Carter Prince. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-```
