@@ -1,134 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta
-    name="description"
-    content="About Carter Prince and contact information">
-  <title>Carter Prince | About & Contact</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="About and contact page for Carter Prince's web development portfolio."
+    >
+
+    <title>Carter Prince | About & Contact</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header class="site-header">
-    <nav class="navbar" aria-label="Main navigation">
-      <a class="logo" href="index.html">Carter Prince</a>
+    <!-- Skip navigation -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
 
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="primary-menu">
-        Menu
-      </button>
+    <!-- Header -->
+    <header class="site-header">
 
-      <ul class="nav-links" id="primary-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a class="active" href="about.html">About & Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+        <nav class="navbar" aria-label="Main navigation">
 
-  <main id="main-content">
-    <section class="page-header">
-      <p class="eyebrow">Get to Know Me</p>
-      <h1>About Me</h1>
-      <p>
-        Learn more about my interests, skills, and goals in web development.
-      </p>
-    </section>
+            <a class="logo" href="index.html">
+                Carter Prince
+            </a>
 
-    <section class="section about-grid">
-      <div>
-        <p class="eyebrow">About</p>
-        <h2>I'm learning by building.</h2>
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="primary-menu"
+            >
+                Menu
+            </button>
+
+            <ul class="nav-links" id="primary-menu">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        class="active"
+                        href="about.html"
+                        aria-current="page"
+                    >
+                        About & Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main content -->
+    <main id="main-content">
+
+        <!-- Page introduction -->
+        <section class="page-header">
+
+            <p class="eyebrow">
+                Get to Know Me
+            </p>
+
+            <h1>
+                About Me
+            </h1>
+
+            <p>
+                Learn more about my interests, skills, and goals
+                in web development.
+            </p>
+
+        </section>
+
+
+        <!-- About section -->
+        <section class="section about-grid">
+
+            <div class="about-content">
+
+                <p class="eyebrow">
+                    About
+                </p>
+
+                <h2>
+                    I'm learning by building.
+                </h2>
+
+                <p>
+                    My goal is to become a stronger web developer by
+                    creating projects that solve real problems and
+                    provide a good experience for the people who use them.
+                </p>
+
+                <p>
+                    I am interested in front-end development,
+                    responsive design, accessibility, and JavaScript.
+                    I enjoy learning new technologies and improving
+                    my skills through hands-on projects.
+                </p>
+
+                <p>
+                    This portfolio demonstrates my understanding of
+                    HTML, CSS, JavaScript, responsive layouts,
+                    accessibility, and user interaction.
+                </p>
+
+                <h3>
+                    My Skills
+                </h3>
+
+                <ul class="skills-list">
+
+                    <li>
+                        Semantic HTML
+                    </li>
+
+                    <li>
+                        Responsive CSS
+                    </li>
+
+                    <li>
+                        CSS Grid & Flexbox
+                    </li>
+
+                    <li>
+                        JavaScript
+                    </li>
+
+                    <li>
+                        Git & GitHub
+                    </li>
+
+                    <li>
+                        Web Accessibility
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="contact-card">
+
+                <h2>
+                    Contact Me
+                </h2>
+
+                <p>
+                    Have a question about my work or want to get
+                    in touch? Send me a message using the form below.
+                </p>
+
+
+                <form id="contact-form" novalidate>
+
+                    <!-- Name -->
+                    <div class="form-group">
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            autocomplete="name"
+                            required
+                            aria-describedby="name-error"
+                        >
+
+                        <p
+                            class="error-message"
+                            id="name-error"
+                            aria-live="polite"
+                        ></p>
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                            aria-describedby="email-error"
+                        >
+
+                        <p
+                            class="error-message"
+                            id="email-error"
+                            aria-live="polite"
+                        ></p>
+
+                    </div>
+
+
+                    <!-- Message -->
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            required
+                            aria-describedby="message-error"
+                        ></textarea>
+
+                        <p
+                            class="error-message"
+                            id="message-error"
+                            aria-live="polite"
+                        ></p>
+
+                    </div>
+
+
+                    <!-- Submit -->
+                    <button
+                        class="button primary-button"
+                        type="submit"
+                    >
+                        Send Message
+                    </button>
+
+
+                    <!-- Success message -->
+                    <p
+                        id="form-success"
+                        class="success-message"
+                        aria-live="polite"
+                        role="status"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
 
         <p>
-          My goal is to become a stronger web developer by creating
-          projects that solve real problems and provide a good experience
-          for the people who use them.
+            &copy; 2026 Carter Prince. All rights reserved.
         </p>
 
-        <p>
-          I'm especially interested in front-end development,
-          responsive design, accessibility, and JavaScript.
-        </p>
+    </footer>
 
-        <h3>Current Skills</h3>
-
-        <ul class="skills-list">
-          <li>Semantic HTML</li>
-          <li>Responsive CSS</li>
-          <li>CSS Grid & Flexbox</li>
-          <li>JavaScript</li>
-          <li>Git & GitHub</li>
-          <li>Web Accessibility</li>
-        </ul>
-      </div>
-
-      <aside class="contact-card">
-        <h2>Let's Connect</h2>
-
-        <p>
-          Have a question about my work or want to get in touch?
-          Send me a message using the form.
-        </p>
-
-        <form id="contact-form" novalidate>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              autocomplete="name"
-              required>
-            <p class="error-message" id="name-error" aria-live="polite"></p>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              autocomplete="email"
-              required>
-            <p class="error-message" id="email-error" aria-live="polite"></p>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              required></textarea>
-            <p class="error-message" id="message-error" aria-live="polite"></p>
-          </div>
-
-          <button class="button primary-button" type="submit">
-            Send Message
-          </button>
-
-          <p
-            id="form-success"
-            class="success-message"
-            aria-live="polite"
-            role="status">
-          </p>
-        </form>
-      </aside>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2026 Carter Prince. All rights reserved.</p>
-  </footer>
 </body>
 </html>
